@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title> Home | EC </title>
+  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body>
+    <style>
+    body {
+    background-color: #67B7FF;
+    }
+    .btn {
+      border: 2px #0377fc;
+      border-radius: 8px;
+      background-color: #eee;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .btn:hover {
+      border: 2px #eee;
+      background: #bdeaff;
+    }
+    .home {color: #0377fc}
+
+    .about {color: #0377fc}
+    .plus {color: #0377fc}
+    .minus {color: #0377fc}
+    .times {color: #0377fc}
+    .divide {color: #0377fc}
+    .root {color: #0377fc}
+    .power {color: #0377fc}
+    .brackopen {color: #0377fc}
+    .brackclose {color: #0377fc}
+      </style>
+
+    <tr>
+      <//Top menu>
+        <td style="text-align: left;" colspan="5">
+            <button class="btn home"><i class="fa fa-home"></i> Home</button>
+            <button onclick="window.location.href='about.html'" class="btn about"><i class="far fa-newspaper"></i> About</button>
+            <br></br>
+        </td>
+    </tr>
+
+    <table style="width: 1000px; margin-left: auto; margin-right: auto;">
+      <tbody>
+        <br></br>
+
+        <tr>
+          <//Display Banner>
+          <td style="text-align: center+20px;" colspan="5">
+            <img src="/Users/kjellmoller/Desktop/errorCalc/logobanner.jpg" alt ="logo banner">
+
+          </td>
+        </tr>
+
+        <tr>
+          <//get size>
+          <td style="text-align: center;" colspan ="5">
+            <p> Input number of variables: </p>
+            <input id="input" type="number"/>
+            <input id="btn" type="button" value="Input"/>
+            <div id="output"></div>
+            <p id="ask" = "Input variable values:"></p>
+            <script>
+
+            document.getElementById('btn').onclick = function(){
+
+                var totalIterations = parseInt(document.getElementById('input').value);
+                var output = document.getElementById('output');
+                output.innerHTML = '';
+                output.innerHTML = "Input Variable values:\n\n";
+                for(var i = 1; i <= totalIterations; i ++) {
+                    var item = document.createElement('div');
+                    item.innerHTML = i;
+                    output.appendChild(item);
+                }
+            };
+            </script>
+          </td>
+        </tr>
+
+          <tr>
+          <//Lower Buttons>
+            <td style="text-align: center;" colspan ="5">
+              <br></br>
+              <br></br>
+          <button class="btn plus">+</button>
+          <button class="btn minus">-</button>
+          <button class="btn times">x</button>
+          <button class="btn divide">/</button>
+          <br></br>
+          <button class="btn root"><sup>n</sup>√a</button>
+          <button class="btn power">a<sup>n</sup></button>
+          <button class="btn brackopen">(</button>
+          <button class="btn brackclose">)</button>
+
+            </td>
+          </tr>
+
+      </tbody>
+    </table>
+  </body>
+
+</html>
