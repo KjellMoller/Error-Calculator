@@ -1,0 +1,29 @@
+---------------------------------------------------------
+File for equation input
+Input all equations on the last line of the file in the form (with spaces):
+w (±x) (operator) y (±z)
+Include spaces around brackets and operators.
+If a number is a constant without error, still include an uncertainty value of 0.0.
+Transfer to the website Errorcalculator.com to utilize the interface developed for the program.
+
+
+Operators:
+Addition = '+'
+Subtraction = '-'
+Multiply = '*'
+Divide = '/'
+Power = '^' (exponents must be a constant)
+
+---------------------------------------------------------
+
+2.456 (± 0.001) + 0.433 (± 0.003)
+3.856 (± 0.042) - 8.432 (± 0.003) * 7.312 (±0.069) + 8.111 (±0.001)
+2.456 (± 0.001) ^ 0.433 (± 0.00) + 8.432 (± 0.003)
+( 3.856 (± 0.042) - 8.432 (± 0.003) ) * 7.312 (±0.069) + 8.111 (±0.001)
+2.456 (± 0.001) * 0.433 (± 0.001) + 8.432 (± 0.003)
+2.456 (± 0.001) ^ 0.433 (± 0.00) + 8.432 (± 0.003)
+3.856 (± 0.042) * ( 8.432 (± 0.003) - 7.312 (±0.069) ) + 8.111 (±0.001)
+3.856 (± 0.042) - 8.432 (± 0.003) * 7.312 (±0.069) + 8.111 (±0.001)
+3.856 (± 0.042) * ( 8.432 (± 0.003) - 7.312 (±0.069) ) + 8.111 (±0.001)
+2.456 (± 0.001) ^ 0.433 (± 0.00) + 8.432 (± 0.003)
+( 3.856 (± 0.042) - 8.432 (± 0.003) ) * 7.312 (±0.069) + 8.111 (±0.001)
